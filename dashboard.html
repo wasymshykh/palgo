@@ -6,9 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Palgo Dashboard</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
@@ -17,14 +20,425 @@
 </head>
 <body>
 
+    <div id="wrapper">
+        <div class="top-bar">
+            <div class="logo-div">
+                <button type="button" id="sidebarCollapse" class="btn-nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <img src="img/logo.png">
+            </div>
 
-    
+            <div class="topbar-content">
+                <div class="cityDrop">
+                    <button class="dropdown-toggle" type="button" id="dropCity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>Maxico</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropCity">
+                        <button class="dropdown-item" type="button">Hyderabad</button>
+                        <button class="dropdown-item" type="button">Karachi</button>
+                        <button class="dropdown-item" type="button">Pakistan</button>
+                    </div>
+                </div>
+                <div class="topSelect">
+                    <select name="" class="form-control">
+                        <option value="">From</option>
+                    </select>
+                    <select name="" class="form-control">
+                        <option value="">To</option>
+                    </select>
+                </div>
+                <div class="nav-links">
+                    <a href="#">Last 7 days</a>
+                    <a href="#">Last 30 days</a>
+                </div>
+            </div>
+
+            <div class="avatar-img">
+                <span>Elliot Spencer</span>
+                <img src="img/avatar.jpg" alt="avatar">
+            </div>
+        </div>
+        <!-- Sidebar  -->
+        
+        <!-- Page Content  -->
+        <div id="content">
+            
+            <nav id="sidebar">
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" class="active">
+                            <i class="fas fa-th-large"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-download"></i>
+                            Collections
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-credit-card"></i>
+                            Payments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-money-bill-alt"></i>
+                            Sales
+                        </a>
+                    </li>
+                </ul>
+        
+            </nav>
+            
+
+            <div class="content-body">
+
+                <!-- Page Content Start -->
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="card">
+                            <div class="card-header card-purple card-profit">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h2><i class="fas fa-caret-up"></i> 91%</h2>
+                                            <p>Collection Effieciency</p>
+                                        </div>
+                                        <div class="col">
+                                            <h2><i class="fas fa-caret-down"></i> $ 56,012</h2>
+                                            <p>Total Sales</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="content-group">
+                                        <ul>
+                                            <li>
+                                                <span class="put-l">Service Fees</span> 
+                                                <span class="put-r"><span class="profit-text">$7,305</span><i>(15%)</i></span>
+                                            </li>
+                                            <li>
+                                                <span class="put-l">Trade Discount</span> 
+                                                <span class="put-r"><span>$7,305</span><i>(15%)</i></span>
+                                            </li>
+                                            <li>
+                                                <span class="put-l">Gross Margin</span> 
+                                                <span class="put-r profit-bg"><span class="profit-text">$7,305</span><i>(15%)</i></span>
+                                            </li>
+                                            <li>
+                                                <span class="put-l">Actual Collections</span> 
+                                                <span class="put-r"><span>15%</span></span>
+                                            </li>
+                                            <li>
+                                                <span class="put-l">Perfect Collections</span> 
+                                                <span class="put-r"><span>15%</span></span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="card">
+                            <div class="card-header card-purple card-profit">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h2 class="i-pink"><i class="fas fa-store-alt"></i> 91</h2>
+                                            <p>Merchants</p>
+                                        </div>
+                                        <div class="col">
+                                            <h2 class="i-pink"><i class="fas fa-money-bill-alt"></i> $ 110</h2>
+                                            <p>Ave. Ticket</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="container">
+                                    <div class="content-group">
+                                        <ul>
+                                            <li>
+                                                <span class="put-l">Marchants in Trail</span> 
+                                                <span class="put-r">21</span>
+                                            </li>
+                                            <li>
+                                                <span class="put-l">Trail exceeding 30 Days</span> 
+                                                <span class="put-r">21</span>
+                                            </li>
+                                            <li>
+                                                <span class="put-l">Merchants < 90% collection effiency</span> 
+                                                <span class="put-r">21</span>
+                                            </li>
+                                            <li>
+                                                <span class="put-l">Average Sales</span> 
+                                                <span class="put-r">21</span>
+                                            </li>
+                                            <li>
+                                                <span class="put-l">Ave. Sales of Top 20%</span> 
+                                                <span class="put-r">21</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="row mt-4">
+
+                    <!-- Table Card -->
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="card">
+                            <div class="card-header card-white card-category">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card-heading">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <h2>Sales</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-right-text">
+                                                <div class="card-r-t-b">
+                                                    <h3>$ 12,175</h3>
+                                                    <p>Gross Margin</p>
+                                                </div>
+                                                <div class="card-r-t-a">
+                                                    <a href=""><i class="fas fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2" class="t-white-bg">3/2/19 - 16/12/19</th>
+                                            <th>This Month</th>
+                                            <th>Last Month</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="t-white-bg">$ Total Sales</th>
+                                            <td class="t-white-bg">$56,012</td>
+                                            <td>$39,012</td>
+                                            <td>$56,012</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="t-white-bg">$ Total Sales</th>
+                                            <td class="t-white-bg">$56,012</td>
+                                            <td>$39,012</td>
+                                            <td>$56,012</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="t-white-bg">$ Total Sales</th>
+                                            <td class="t-white-bg">$56,012</td>
+                                            <td>$39,012</td>
+                                            <td>$56,012</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Table Card End -->
+
+
+                    <!-- Table Card -->
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <div class="card">
+                            <div class="card-header card-white card-category">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card-heading">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <h2>Merchants</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-right-text">
+                                                <div class="card-r-t-b">
+                                                    <h3>56</h3>
+                                                    <p>Active Merchants</p>
+                                                </div>
+                                                <div class="card-r-t-a">
+                                                    <a href=""><i class="fas fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2" class="t-white-bg">3/2/19 - 16/12/19</th>
+                                            <th>This Month</th>
+                                            <th>Last Month</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="t-white-bg">Active</th>
+                                            <td class="t-white-bg">$56,012</td>
+                                            <td>$39,012</td>
+                                            <td>$56,012</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="t-white-bg">Unit/Merchant</th>
+                                            <td class="t-white-bg">$56,012</td>
+                                            <td>$39,012</td>
+                                            <td>$56,012</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="t-white-bg">Try for 30</th>
+                                            <td class="t-white-bg">$56,012</td>
+                                            <td>$39,012</td>
+                                            <td>$56,012</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Table Card End -->
+                    
+                </div>
+
+                <div class="row mt-4">
+                    <!-- Table Card -->
+                    <div class="col-sm-12">
+                        <div class="card">
+                            <div class="card-header card-white card-category">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card-heading">
+                                                <i class="fas fa-shopping-cart"></i>
+                                                <h2>Late Payments Profile</h2>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-right-text">
+                                                <div class="card-r-t-b">
+                                                    <h3>$ 12,175</h3>
+                                                    <p>Total Late</p>
+                                                </div>
+                                                <div class="card-r-t-a">
+                                                    <a href=""><i class="fas fa-chevron-right"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body p-0">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2" class="t-white-bg">3/2/19 - 16/12/19</th>
+                                            <th>This Month</th>
+                                            <th>Last Month</th>
+                                            <th colspan="2" class="t-white-bg">3/2/19 - 16/12/19</th>
+                                            <th>This Month</th>
+                                            <th>Last Month</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th class="t-white-bg">Installment 1</th>
+                                            <td class="t-white-bg">$56,012</td>
+                                            <td>$39,012</td>
+                                            <td>$56,012</td>
+                                            <th class="t-white-bg">Installment 1</th>
+                                            <td class="t-white-bg">10%</td>
+                                            <td>10%</td>
+                                            <td>10%</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="t-white-bg">Installment 1</th>
+                                            <td class="t-white-bg">$56,012</td>
+                                            <td>$39,012</td>
+                                            <td>$56,012</td>
+                                            <th class="t-white-bg">Installment 1</th>
+                                            <td class="t-white-bg">10%</td>
+                                            <td>10%</td>
+                                            <td>10%</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="t-white-bg">Installment 1</th>
+                                            <td class="t-white-bg">$56,012</td>
+                                            <td>$39,012</td>
+                                            <td>$56,012</td>
+                                            <th class="t-white-bg">Installment 1</th>
+                                            <td class="t-white-bg">10%</td>
+                                            <td>10%</td>
+                                            <td>10%</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="t-white-bg">Installment 1</th>
+                                            <td class="t-white-bg">$56,012</td>
+                                            <td>$39,012</td>
+                                            <td>$56,012</td>
+                                            <th class="t-white-bg">Installment 1</th>
+                                            <td class="t-white-bg">10%</td>
+                                            <td>10%</td>
+                                            <td>10%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- Table Card End -->
+                </div>
+
+
+                <!-- Page Content End -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+    $(document).ready(function (){
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+    </script>
 
 </body>
 </html>
