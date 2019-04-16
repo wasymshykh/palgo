@@ -8,6 +8,15 @@ a:hover {
     text-decoration: none;
 }
 
+.btn-primary {
+    color: #fff;
+    background: linear-gradient(90deg, #fa705e, #dd254f);
+    border-color: transparent;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+}
+
 .top-bar {
     width: 100%;
     display: flex;
@@ -119,7 +128,7 @@ a:hover {
 }
 
 
-#content {
+#pcontent {
     display: flex;
     padding: 2em 0;
 }
@@ -194,6 +203,7 @@ a:hover {
 .content-body {
     flex: 1;
     padding: 0 2em;
+    max-width: calc(100% - 80px);
 }
 
 
@@ -386,4 +396,139 @@ a:hover {
 
 .table tbody td.t-white-bg {
     background-color: #ffffff;
+}
+
+.table-lgt {
+    border: 1px solid #e2e9ef;
+}
+.table-lgt thead th {
+    background-color: #ffffff;
+    color: #a4afc7;
+    text-align: right;
+}
+.table-lgt tbody th {
+    background-color: #ffffff;
+    color: #032161;
+    text-align: right;
+}
+.table-lgt tbody td {
+    background-color: #ffffff;
+    color: #354d81;
+    text-align: right;
+}
+.table-lgt tfoot {
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.table-lgt tfoot td {
+    background-color: #ffffff;
+    color: #354d81;
+    text-align: right;
+    font-weight: 700;
+    border-top: none;
+}
+
+
+.tbnv {
+    border-bottom: 1px solid #e2e9ef;
+}
+
+.tbnv > div {
+    padding: 0;
+    display: flex;
+}
+.tbnv > div:first-child {
+    margin-top: 15px;
+}
+
+.tabnav {
+    display: flex;
+}
+
+.tabnav ul {
+    display: flex;
+    list-style: none;
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+.tabnav ul li {
+    margin: 0;
+    padding: 0 1em 0 0;
+    display: flex;
+}
+
+.tabnav ul li a {
+    font-size: 1em;
+    font-weight: 600;
+    color: #a4afc7;
+    padding: 1em 1em;
+}
+
+.tabnav ul li a.active {
+    color: #503eb8;
+    border-bottom: 3px solid #503eb8
+}
+
+.breadcrum a {
+    color: #8568da;
+}
+.breadcrum i {
+    font-size: 0.8em;
+    margin: 0 0.5em;
+    opacity: 0.5;
+}
+
+.profile-card,
+.profile-card .card-body {
+    background-color: #edf1f5;
+}
+
+.profile-card .card-header {
+    border: none;
+    background-color: #edf1f5;
+}
+.profile-card .card-header h3 {
+    font-size: 1.6em;
+    color: #8568da;
+    font-weight: 400;
+    margin: 0;
+}
+
+.profile-card .card-body {
+    padding: 1em;
+}
+.profileinfo {
+    background-color: #ffffff;
+    border-radius: 4px;
+    color: #606a7d;
+    font-weight: 400;
+    width: 94%;
+    margin: 0 0 1em 0;
+    padding: 1em 0.5em;
+}
+.profile-card label {
+    color: #687997;
+}
+.profile-card label.custom-control-label {
+    color: #032161;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.profile-card .contactinfo {
+    padding: 0 1em;
+}
+
+.profile-card .contactinfo p {
+    font-size: 0.9em;
+    color: #606a7d;
+    font-weight: 400;
+    margin: 0;
+}
+.profile-card .contactinfo h5 {
+    font-size: 0.9em;
+    color: #032161;
+    font-weight: 600;
+    margin: 0.1em 0 1em 0;
 }

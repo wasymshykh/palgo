@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Palgo Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <div class="top-bar">
+            <div class="logo-div">
+                <button type="button" id="sidebarCollapse" class="btn-nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <img src="img/logo.png">
+            </div>
+
+            <div class="topbar-content">
+                <div class="cityDrop">
+                    <button class="dropdown-toggle" type="button" id="dropCity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>Maxico</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropCity">
+                        <button class="dropdown-item" type="button">Hyderabad</button>
+                        <button class="dropdown-item" type="button">Karachi</button>
+                        <button class="dropdown-item" type="button">Pakistan</button>
+                    </div>
+                </div>
+                <div class="topSelect">
+                    <select name="" class="form-control">
+                        <option value="">From</option>
+                    </select>
+                    <select name="" class="form-control">
+                        <option value="">To</option>
+                    </select>
+                </div>
+                <div class="nav-links">
+                    <a href="#">Last 7 days</a>
+                    <a href="#">Last 30 days</a>
+                </div>
+            </div>
+
+            <div class="avatar-img">
+                <span>Elliot Spencer</span>
+                <img src="img/avatar.jpg" alt="avatar">
+            </div>
+        </div>
+        <!-- Sidebar  -->
+        
+        <!-- Page Content  -->
+        <div id="pcontent">
+            
+            <nav id="sidebar">
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="#homeSubmenu" class="active">
+                            <i class="fas fa-th-large"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-download"></i>
+                            Collections
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-credit-card"></i>
+                            Payments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-money-bill-alt"></i>
+                            Sales
+                        </a>
+                    </li>
+                </ul>
+        
+            </nav>
+            
+
+            <div class="content-body">
+
+                <!-- Page Content Start -->
+
+                <div class="row mb-4">
+                    <div class="col-sm-12 tbnv d-flex flex-wrap align-items-center justify-content-between">
+                        <div>
+                            <div class="tabnav">
+                                <ul>
+                                    <li><a href="" class="active">All</a></li>
+                                    <li><a href="">Active</a></li>
+                                    <li><a href="">Trail</a></li>
+                                    <li><a href="">Inactive</a></li>
+                                    <li><a href="">Suspended</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="#" class="btn btn-primary mb-3"><i class="fa fa-plus-circle"></i> &nbsp; Add new merchant</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="table-responsive-xl">
+                        <table class="table mb-0 table-lgt">
+                            <thead>
+                                <tr>
+                                    <th>Merchant Name</th>
+                                    <th>Status</th>
+                                    <th>Activation Date</th>
+                                    <th>Late Deactivation</th>
+                                    <th>Suspensions</th>
+                                    <th>Lifetime Days</th>
+                                    <th>Lifetime Value</th>
+                                    <th>No. of Transactions</th>
+                                    <th>Collection Efficiency</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>ABC Stores</th>
+                                    <td>In Trial</td>
+                                    <td>25 days</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>$4,675.70</td>
+                                    <td>24</td>
+                                    <td>90%</td>
+                                </tr>
+                                <tr>
+                                    <th>ABC Stores</th>
+                                    <td>In Trial</td>
+                                    <td>25 days</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                    <td>$4,675.70</td>
+                                    <td>24</td>
+                                    <td>90%</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>$12,175.70</td>
+                                    <td>79</td>
+                                    <td></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page Content End -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+    $(document).ready(function (){
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+    </script>
+
+</body>
+</html>
