@@ -532,3 +532,41 @@ a:hover {
     font-weight: 600;
     margin: 0.1em 0 1em 0;
 }
+
+.hiddenselect {
+    width: 100%;
+    display: flex;
+}
+
+.hiddenselect label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2em 1.4em;
+    border-radius: 6px;
+}
+
+.hiddenselect label {
+    background: linear-gradient(90deg, #edf1f5, #edf1f5);
+}
+.hiddenselect label.lblfile {
+    background: linear-gradient(90deg, #d74b4b, #dd254f);
+}
+
+.hiddenselect label h3 {
+    color: #8568da;
+    font-size: 1.4em;
+    margin-bottom: 5em;
+}
+.hiddenselect label i {
+    color: #8568da;
+    font-size: 2em;
+}
+.hiddenselect label.lblfile h3,
+.hiddenselect label.lblfile i {
+    color: #ffffff;
+}
+
+.hiddenselect input {
+    display: none;
+}
