@@ -78,3 +78,60 @@
         margin-top: 0;
     }
 }
+
+
+@media screen and (max-width: 620px) {
+
+
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-div {
+        margin-right: 0;
+    }
+    .avatar-img {
+        order: 2;
+        padding-right: 0;
+        padding-bottom: 1em;
+    }
+    
+    .topbar-content {
+        order: 3;
+    }
+
+    #dropCity span {
+        font-size: 14px;
+    }
+
+    #sidebar {
+        min-width: 80px;
+        max-width: 80px;
+        text-align: center;
+        margin-left: -80px !important;
+    }
+    #sidebar.active {
+        min-width: initial;
+        max-width: initial;
+        text-align: initial;
+        margin-left: initial !important;
+    }
+
+    .tabnav ul li a {
+        font-size: 0.8em;
+        padding: 0.5em 0.5em;
+        text-align: center;
+    }
+
+    .breadcrum {
+        margin-bottom: 2em !important;
+    }
+    
+
+    .content-body {
+        max-width: 100%;
+        width: 100%;
+    }
+
+
+}

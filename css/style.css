@@ -17,6 +17,12 @@ a:hover {
     font-weight: 600;
 }
 
+#wrapper {
+    display: block;
+    width: 100%;
+}
+
+
 .top-bar {
     width: 100%;
     display: flex;
@@ -129,6 +135,7 @@ a:hover {
 
 
 #pcontent {
+    width: 100%;
     display: flex;
     padding: 2em 0;
 }
@@ -414,6 +421,7 @@ a:hover {
 .table-lgt tbody td {
     background-color: #ffffff;
     color: #354d81;
+    font-weight: 400;
     text-align: right;
 }
 .table-lgt tfoot {
@@ -569,4 +577,65 @@ a:hover {
 
 .hiddenselect input {
     display: none;
+}
+
+.table-td-white {
+    border: 1px solid #edf1f5;
+}
+.table-td-white tbody td {
+    background-color: #ffffff;
+    color: #032161;
+    font-weight: 400;
+}
+
+.table-td-white tbody td a {
+    color: #8568da;
+}
+
+.drepot a {
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.drepot a i {
+    color: #503eb8;
+    font-size: 1.2em;
+}
+
+.profitpcontent {
+    display: flex;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.profitpcontent i {
+    font-size: 1.6em;
+    color: #4bd759;
+    margin-right: 0.5em;
+}
+.profitpcontent b {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #12213d;
+}
+.profitpcontent span {
+    font-size: 0.9em;
+    color: #687997;
+    line-height: 1.2;
+    margin-left: 0.5em;
+}
+
+.drepot-center {
+    display: flex;
+    align-items: center;
+}
+
+.amount-danger {
+    color: #dd254f;
+    background-color: #ffd4de;
+    display: block;
+    border-radius: 2em;
+    text-align: center;
+    padding: 0.4em 0.5em;
+    font-weight: 700;
 }
