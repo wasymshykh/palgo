@@ -639,3 +639,9 @@ a:hover {
     padding: 0.4em 0.5em;
     font-weight: 700;
 }
+
+.gototable {
+    color: #8568da;
+    font-size: 1.2em;
+    padding: 5px 10px;
+}
