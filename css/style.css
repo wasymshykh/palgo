@@ -16,7 +16,6 @@ a:hover {
     font-size: 1em;
     font-weight: 600;
 }
-
 .btn-secondary {
     color: #fff;
     background: linear-gradient(90deg, #8567da, #513db8);
@@ -25,9 +24,16 @@ a:hover {
     font-size: 1em;
     font-weight: 600;
 }
-
 .btn-default {
     color: #687997;
+    border-color: transparent;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+}
+.btn-danger {
+    color: #d74b4b;
+    background: none;
     border-color: transparent;
     border: none;
     font-size: 1em;
@@ -792,9 +798,16 @@ a:hover {
 .note-text p {
     font-size: 1em;
     color: #12213d;
-    margin: 1em 0 0 0;
+    margin: 1em 0 1em 0;
 }
 
+.note-text a.morecomm {
+    color: #503eb8;
+}
+.note-text a.morecomm i {
+    margin-right: 0.8em;
+    font-size: 0.8em;
+}
 
 .note-actions {
     display: flex;
@@ -812,3 +825,80 @@ a:hover {
 .note-actions a.action-delete {
     color: #eb1c1c;
 }
+
+.md-heading-lead {
+    display: block;
+}
+.md-heading-lead h3 {
+    color: #687997;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 1em 0 0.5em 1em;
+}
+
+h5.modal-title {
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #687997;
+}
+
+h5.modal-title span {
+    font-weight: 600;
+    color: #12213d;
+}
+
+.lead-details-u .redeem-data p {
+    font-size: 0.9em;
+    font-weight: 400;
+}
+.lead-details-u .redeem-data h4 {
+    font-size: 0.9em;
+    margin: 0.1em 0 1.2em 0;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+.modal-backdrop {
+    background-color: #12213d;
+}
+.modal-backdrop.show {
+    opacity: 0.8;
+}
+
+
+.vetting-docs {
+    display: flex;
+    flex-wrap: wrap;
+}
+.vetting-doc {
+    display: flex;
+    flex: 18% 0 1;
+    border-radius: 6px;
+    min-height: 100px;
+    margin: 1% 1%;
+}
+.vetting-doc .vetting-text {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 0.5em;
+}
+
+.vetting-doc .vetting-text p {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.vetting-doc .vetting-text a {
+    color: #ffffff;
+    font-weight: 600;
+    background: #8567da;
+    padding: 0.2em 1em;
+    font-size: 0.9em;
+    border-radius: 2em;
+}
+

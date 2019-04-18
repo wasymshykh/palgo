@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Palgo Dashboard</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <div class="top-bar">
+            <div class="logo-div">
+                <button type="button" id="sidebarCollapse" class="btn-nav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <img src="img/logo.png">
+            </div>
+
+            <div class="topbar-content">
+                <div class="cityDrop">
+                    <button class="dropdown-toggle" type="button" id="dropCity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span>Maxico</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropCity">
+                        <button class="dropdown-item" type="button">Hyderabad</button>
+                        <button class="dropdown-item" type="button">Karachi</button>
+                        <button class="dropdown-item" type="button">Pakistan</button>
+                    </div>
+                </div>
+                <div class="topSelect">
+                    <select name="" class="form-control">
+                        <option value="">From</option>
+                    </select>
+                    <select name="" class="form-control">
+                        <option value="">To</option>
+                    </select>
+                </div>
+                <div class="nav-links">
+                    <a href="#">Last 7 days</a>
+                    <a href="#">Last 30 days</a>
+                </div>
+            </div>
+
+            <div class="avatar-img">
+                <span>Elliot Spencer</span>
+                <img src="img/avatar.jpg" alt="avatar">
+            </div>
+        </div>
+        <!-- Sidebar  -->
+        
+        <!-- Page Content  -->
+        <div id="pcontent">
+            
+            <nav id="sidebar">
+                <ul class="list-unstyled components">
+                    <li class="active">
+                        <a href="dashboard.html">
+                            <i class="fas fa-th-large"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="collections.html">
+                            <i class="fas fa-download"></i>
+                            Collections
+                        </a>
+                    </li>
+                    <li>
+                        <a href="payment.html" class="active">
+                            <i class="fas fa-credit-card"></i>
+                            Payments
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-money-bill-alt"></i>
+                            Sales
+                        </a>
+                    </li>
+                    <li>
+                        <a href="merchant.html">
+                            <i class="fas fa-store-alt"></i>
+                            Merchants
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+
+            <div class="content-body">
+
+                <!-- Page Content Start -->
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="table-responsive-xl">
+                        <table class="table mb-0 table-lgt">
+                            <thead>
+                                <tr>
+                                    <th>LID</th>
+                                    <th>Name</th>
+                                    <th>Company</th>
+                                    <th>Phone</th>
+                                    <th>Date</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>01</th>
+                                    <td>In Trail</td>
+                                    <td>ABC Sa de CV</td>
+                                    <td>123454546211</td>
+                                    <td>Nov 11, 2018</td>
+                                    <td><a href="#" class="gototable"  data-toggle="modal" data-target="#leadsDetailsMod"><i class="fa fa-chevron-right"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <th>02</th>
+                                    <td>In Trail</td>
+                                    <td>ABC Sa de CV</td>
+                                    <td>123454546211</td>
+                                    <td>Nov 11, 2018</td>
+                                    <td><a href="#" class="gototable"><i class="fa fa-chevron-right"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Page Content End -->
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+<div class="modal fade" id="leadsDetailsMod" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><span>Leads Processing Form:</span> Jose Done</h5>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                <div class="container lead-details-u">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="redeem-data">
+                                <p>#</p>
+                                <h4>01</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="redeem-data">
+                                <p>Name</p>
+                                <h4>Jose Doe</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="redeem-data">
+                                <p>Company</p>
+                                <h4>ABC Sa de CV</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="redeem-data">
+                                <p>Phone</p>
+                                <h4>+27 124 3457</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="redeem-data">
+                                <p>Date</p>
+                                <h4>Mar 10, 2018</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="redeem-data">
+                                <p>Description</p>
+                                <h4>Rob's Checken Shop is a new shop that sells fried chicken and other types of fast food to our clients in Nigeria. We advertise online and in the local newspaper.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="md-heading-lead">
+                            <h3>Communications Tracker</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-auto d-flex">
+                            <div class="avatar-icon">
+                                <h3>AP</h3>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="note-text">
+                                <h3>andrew.playform <span>2018-09-27 at 13:21:13</span></h3>
+                                <p>I spoke to this customer on the phone and they said they get on Friday i.e. in 2 days and they will make their payment then.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-auto d-flex">
+                            <div class="avatar-icon">
+                                <h3>AP</h3>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="note-text">
+                                <h3>andrew.playform <span>2018-09-27 at 13:21:13</span></h3>
+                                <p>I spoke to this customer on the phone and they said they get on Friday i.e. in 2 days and they will make their payment then.</p>
+                                <a href="#" class="morecomm"><i class="fa fa-plus"></i> 8 more comments</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer justify-content-between">
+                <div>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Terminate Lead Process</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-secondary" id="pushopen">Push to Vetting Process <i class="fa fa-arrow-right ml-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="leadsDetailsVetting" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"><span>Merchant Vetting Form:</span> Jose Done</h5>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                
+                <div class="container lead-details-u">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="redeem-data">
+                                <p>#</p>
+                                <h4>01</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="redeem-data">
+                                <p>Name</p>
+                                <h4>Jose Doe</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="redeem-data">
+                                <p>Company</p>
+                                <h4>ABC Sa de CV</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="redeem-data">
+                                <p>Phone</p>
+                                <h4>+27 124 3457</h4>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="redeem-data">
+                                <p>Date</p>
+                                <h4>Mar 10, 2018</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="redeem-data">
+                                <p>Description</p>
+                                <h4>Rob's Checken Shop is a new shop that sells fried chicken and other types of fast food to our clients in Nigeria. We advertise online and in the local newspaper.</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="md-heading-lead">
+                            <h3>Communications Tracker</h3>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-auto d-flex">
+                            <div class="avatar-icon">
+                                <h3>AP</h3>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="note-text">
+                                <h3>andrew.playform <span>2018-09-27 at 13:21:13</span></h3>
+                                <p>I spoke to this customer on the phone and they said they get on Friday i.e. in 2 days and they will make their payment then.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-auto d-flex">
+                            <div class="avatar-icon">
+                                <h3>AP</h3>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="note-text">
+                                <h3>andrew.playform <span>2018-09-27 at 13:21:13</span></h3>
+                                <p>I spoke to this customer on the phone and they said they get on Friday i.e. in 2 days and they will make their payment then.</p>
+                                <a href="#" class="morecomm"><i class="fa fa-plus"></i> 8 more comments</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="vetting-docs">
+                            <div class="vetting-doc" style="background: linear-gradient(rgba(18,33,61,0.7),rgba(18,33,61,0.7)), url(img/docimg.png) no-repeat; background-size: cover;">
+                                <div class="vetting-text">
+                                    <p>Business ID</p>
+                                    <a href="#">View</a>
+                                </div>
+                            </div>
+
+                            <div class="vetting-doc" style="background: linear-gradient(rgba(18,33,61,0.7),rgba(18,33,61,0.7)), url(img/docimg.png) no-repeat; background-size: cover;">
+                                <div class="vetting-text">
+                                    <p>Bank Statement</p>
+                                    <a href="#">View</a>
+                                </div>
+                            </div>
+
+
+                            <div class="vetting-doc" style="background: linear-gradient(rgba(18,33,61,0.7),rgba(18,33,61,0.7)), url(img/docimg.png) no-repeat; background-size: cover;">
+                                <div class="vetting-text">
+                                    <p>Proof of Domicile</p>
+                                    <a href="#">View</a>
+                                </div>
+                            </div>
+
+
+                            <div class="vetting-doc" style="background: linear-gradient(rgba(18,33,61,0.7),rgba(18,33,61,0.7)), url(img/docimg.png) no-repeat; background-size: cover;">
+                                <div class="vetting-text">
+                                    <p>Govt Issued ID Front</p>
+                                    <a href="#">View</a>
+                                </div>
+                            </div>
+
+
+                            <div class="vetting-doc" style="background: linear-gradient(rgba(18,33,61,0.7),rgba(18,33,61,0.7)), url(img/docimg.png) no-repeat; background-size: cover;">
+                                <div class="vetting-text">
+                                    <p>Govt Issued ID Back</p>
+                                    <a href="#">View</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer justify-content-between">
+                <div>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Terminate Vetting Process</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-secondary">Push to Account Creation Process <i class="fa fa-arrow-right ml-2"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+<script>
+    $(document).ready(function (){
+        document.querySelector('#pushopen').addEventListener('click', (e)=>{
+            e.preventDefault();
+            $('#leadsDetailsMod').modal('hide');    
+            $('#leadsDetailsMod').on('hidden.bs.modal', function (e) {
+                $('#leadsDetailsVetting').modal('show');
+            })
+
+            $('#leadsDetailsVetting').on('shown.bs.modal', function (e) {
+                $('#leadsDetailsVetting').model('handleUpdate');  
+            })
+        })
+    })
+</script>
+
+
+    
+
+    <script>
+    $(document).ready(function (){
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+        });
+    });
+    </script>
+
+</body>
+</html>
