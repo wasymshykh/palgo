@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 12px;
 }
 
@@ -279,8 +279,8 @@ a:hover {
 .card-category .card-heading i {
     width: 50px;
     height: 50px;
-    color: #513eb8;
-    background: rgba(135, 105, 219, 0.2);
+    color: #8567da;
+    background: rgba(135, 105, 219, 0.1);
     border-radius: 50%;
     line-height: 50px;
     text-align: center;
@@ -288,11 +288,11 @@ a:hover {
     margin-right: 1em;
 }
 .card-category .card-heading h2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     color: #032161;
     display: flex;
     align-items: center;
-    font-weight: 700;
+    font-weight: 600;
     margin: 0;
 }
 .card-comments .card-heading {
@@ -361,7 +361,7 @@ a:hover {
     flex: 1;
 }
 .card-r-t-b h3 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 600;
     color: #513eb8;
     margin: 0;
@@ -467,8 +467,8 @@ a:hover {
 }
 
 .table tbody td {
-    color: #12213d;
-    font-weight: 600;
+    color: #032161;
+    font-weight: 400;
     text-align: right;
     background-color: #f7f9fb;
 }
