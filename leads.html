@@ -127,7 +127,7 @@
                                     <td>ABC Sa de CV</td>
                                     <td>123454546211</td>
                                     <td>Nov 11, 2018</td>
-                                    <td><a href="#" class="gototable"  data-toggle="modal" data-target="#leadsDetailsMod"><i class="fa fa-chevron-right"></i></a></td>
+                                    <td><a href="#" class="gototable" data-toggle="modal" data-target="#leadsDetailsMod"><i class="fa fa-chevron-right"></i></a></td>
                                 </tr>
                                 <tr>
                                     <th>02</th>
@@ -135,7 +135,7 @@
                                     <td>ABC Sa de CV</td>
                                     <td>123454546211</td>
                                     <td>Nov 11, 2018</td>
-                                    <td><a href="#" class="gototable"><i class="fa fa-chevron-right"></i></a></td>
+                                    <td><a href="#" class="gototable" data-toggle="modal" data-target="#leadsDetailsMod"><i class="fa fa-chevron-right"></i></a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -419,16 +419,10 @@
     
 <script>
     $(document).ready(function (){
-        document.querySelector('#pushopen').addEventListener('click', (e)=>{
-            e.preventDefault();
+        document.querySelector('#pushopen').addEventListener('click', (ea)=>{
+            ea.preventDefault();
             $('#leadsDetailsMod').modal('hide');    
-            $('#leadsDetailsMod').on('hidden.bs.modal', function (e) {
-                $('#leadsDetailsVetting').modal('show');
-            })
-
-            $('#leadsDetailsVetting').on('shown.bs.modal', function (e) {
-                $('#leadsDetailsVetting').model('handleUpdate');  
-            })
+            $('#leadsDetailsVetting').modal('show');
         })
     })
 </script>
