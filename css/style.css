@@ -17,6 +17,23 @@ a:hover {
     font-weight: 600;
 }
 
+.btn-secondary {
+    color: #fff;
+    background: linear-gradient(90deg, #8567da, #513db8);
+    border-color: transparent;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.btn-default {
+    color: #687997;
+    border-color: transparent;
+    border: none;
+    font-size: 1em;
+    font-weight: 600;
+}
+
 #wrapper {
     display: block;
     width: 100%;
@@ -67,6 +84,21 @@ a:hover {
     flex: 1;
     display: flex;
     align-items: center;
+}
+
+.redeem-tb {
+    display: flex;
+    align-items: center;
+}
+
+.redeem-tb h3 {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #354d81;
+    margin: 0;
+}
+.redeem-tb h3 span {
+    color: #12213d;
 }
 
 .cityDrop {
@@ -257,6 +289,32 @@ a:hover {
     font-weight: 700;
     margin: 0;
 }
+.card-comments .card-heading {
+    display: flex;
+}
+.card-comments.card-header {
+    padding: 1.4em 1.4em;
+}
+.card-comments .card-heading i {
+    width: 30px;
+    height: 30px;
+    color: #513eb8;
+    background: #ffffff;
+    border: 1px solid #e2e9ef;
+    border-radius: 50%;
+    line-height: 28px;
+    text-align: center;
+    font-size: 0.8em;
+    margin-right: 1em;
+}
+.card-comments .card-heading p {
+    font-size: 1em;
+    color: #12213d;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin: 0;
+}
 .card-profit h2 i {
     color: #fff;
     font-size: 0.7em;
@@ -278,7 +336,6 @@ a:hover {
     font-weight: 400;
     margin: 0;
 }
-
 .card-profit .row .col:nth-child(2) h2 {
     justify-content: flex-end;
 }
@@ -321,6 +378,15 @@ a:hover {
 .card-r-t-a a {
     color: #aa91ec;
     font-size: 1.2em;
+}
+.card-r-tb-a {
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+}
+.card-r-tb-b a,
+.card-r-tb-a a {
+    padding: 0.6em 1.8em;
 }
 
 .content-group {
@@ -541,6 +607,23 @@ a:hover {
     margin: 0.1em 0 1em 0;
 }
 
+.redeem-data p {
+    font-size: 1em;
+    color: #606a7d;
+    font-weight: 400;
+    margin: 0;
+}
+.redeem-data h4 {
+    font-size: 1em;
+    color: #12213d;
+    font-weight: 600;
+    margin: 0.1em 0 1em 0;
+}
+.redeem-data a {
+    color: #fa705e
+}
+
+
 .hiddenselect {
     width: 100%;
     display: flex;
@@ -644,4 +727,88 @@ a:hover {
     color: #8568da;
     font-size: 1.2em;
     padding: 5px 10px;
+}
+
+.pg-heading {
+    display: block;
+    margin: 2em 0 2em 0;
+}
+
+.pg-heading h3 {
+    font-size: 1.6em;
+    font-weight: 600;
+    color: #12213d;
+}
+
+.avatar-icon {
+    display: flex;
+    position: relative;
+}
+
+.avatar-icon::before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #e2e9ef;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.avatar-icon h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #dd254f;
+    width: 40px;
+    height: 40px;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.note-text {
+    width: 100%;
+    margin: 1em 0 2em 0;
+}
+
+.note-text h3 {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: #12213d;
+}
+
+.note-text h3 span {
+    font-weight: 400;
+    margin-left: 0.8em;
+    color: #687997;
+}
+
+.note-text p {
+    font-size: 1em;
+    color: #12213d;
+    margin: 1em 0 0 0;
+}
+
+
+.note-actions {
+    display: flex;
+    align-items: center;
+}
+
+.note-actions a {
+    font-size: 1.2em;
+    padding: 0.2em 1em;
+}
+
+.note-actions a.action-edit {
+    color: #febe65;
+}
+.note-actions a.action-delete {
+    color: #eb1c1c;
 }
