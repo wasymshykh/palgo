@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Palgo Dashboard</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
 
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css">
 
@@ -15,7 +15,9 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
 </head>
 <body>
@@ -107,7 +109,7 @@
                             <h4>D-Lite Table Lamp: 12342</h4>
 
                             <p>Notes:</p>
-                            <h4><a href="#">View 1 Note</a></h4>
+                            <h4><a data-toggle="collapse" href="#collapseNotes" role="button" aria-expanded="false" aria-controls="collapseNotes">View 1 Note</a></h4>
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -169,74 +171,76 @@
                     </div>
                 </div>
 
-                <div class="row mb-4">
-                    <div class="col-sm-12">
-                        <div class="pg-heading">
-                            <h3>Notes</h3>
+                <div class="collapse" id="collapseNotes">
+                    <div class="row mb-4">
+                        <div class="col-sm-12">
+                            <div class="pg-heading">
+                                <h3>Notes</h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-sm-12">
-                        <div class="card">
-                            <div class="card-header card-white card-comments">
-                                <div class="container">
-                                    <div class="row justify-content-between">
-                                        <div class="d-flex align-items-center">
-                                            <a href="#" class="card-heading">
-                                                <i class="fas fa-plus"></i>
-                                                <p>Add Comment</p>
-                                            </a>
-                                        </div>
-                                        <div class="d-flex align-items-center">
-                                            <div class="card-right-text">
-                                                <div class="card-r-tb-b">
-                                                    <a href="#" class="btn btn-default">Cancel</a>
+                        <div class="col-sm-12">
+                            <div class="card">
+                                <div class="card-header card-white card-comments">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col d-flex align-items-center">
+                                                <div class="card-heading">
+                                                    <i class="fas fa-plus"></i>
+                                                    <textarea placeholder="Add Comment" rows="1"></textarea>
                                                 </div>
-                                                <div class="card-r-tb-a">
-                                                    <a href="" class="btn btn-secondary">Post</a>
+                                            </div>
+                                            <div class="col-auto d-flex align-items-center">
+                                                <div class="card-right-text">
+                                                    <div class="card-r-tb-b">
+                                                        <a href="#" class="btn btn-default">Cancel</a>
+                                                    </div>
+                                                    <div class="card-r-tb-a">
+                                                        <a href="" class="btn btn-secondary">Post</a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-auto d-flex">
-                                            <div class="avatar-icon">
-                                                <h3>AP</h3>
+                                <div class="card-body">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-auto d-flex">
+                                                <div class="avatar-icon">
+                                                    <h3>AP</h3>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="note-text">
+                                                    <h3>andrew.playform <span>2018-09-27 at 13:21:13</span></h3>
+                                                    <p>I spoke to this customer on the phone and they said they get on Friday i.e. in 2 days and they will make their payment then.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-auto d-flex">
+                                                <div class="note-actions">
+                                                    <a href="#" class="action-edit"><i class="fa fa-pencil-alt"></i></a>
+                                                    <a href="#" class="action-delete"><i class="fa fa-trash"></i></a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col">
-                                            <div class="note-text">
-                                                <h3>andrew.playform <span>2018-09-27 at 13:21:13</span></h3>
-                                                <p>I spoke to this customer on the phone and they said they get on Friday i.e. in 2 days and they will make their payment then.</p>
+    
+                                        <div class="row">
+                                            <div class="col-auto d-flex">
+                                                <div class="avatar-icon">
+                                                    <h3>AP</h3>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-auto d-flex">
-                                            <div class="note-actions">
-                                                <a href="#" class="action-edit"><i class="fa fa-pencil-alt"></i></a>
-                                                <a href="#" class="action-delete"><i class="fa fa-trash"></i></a>
+                                            <div class="col">
+                                                <div class="note-text">
+                                                    <h3>andrew.playform <span>2018-09-27 at 13:21:13</span></h3>
+                                                    <p>I spoke to this customer on the phone and they said they get on Friday i.e. in 2 days and they will make their payment then.</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-auto d-flex">
-                                            <div class="avatar-icon">
-                                                <h3>AP</h3>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="note-text">
-                                                <h3>andrew.playform <span>2018-09-27 at 13:21:13</span></h3>
-                                                <p>I spoke to this customer on the phone and they said they get on Friday i.e. in 2 days and they will make their payment then.</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto d-flex">
-                                            <div class="note-actions">
-                                                <a href="#" class="action-edit"><i class="fa fa-pencil-alt"></i></a>
-                                                <a href="#" class="action-delete"><i class="fa fa-trash"></i></a>
+                                            <div class="col-auto d-flex">
+                                                <div class="note-actions">
+                                                    <a href="#" class="action-edit"><i class="fa fa-pencil-alt"></i></a>
+                                                    <a href="#" class="action-delete"><i class="fa fa-trash"></i></a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -254,13 +258,6 @@
 
     </div>
 
-
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
     <script>
     $(document).ready(function (){
